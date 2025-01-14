@@ -1,0 +1,14 @@
+.header {
+    display:flex;
+    justify-content: space-between;
+
+    a {
+        color: black;
+    }
+
+    a.active{
+        color: black;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+}

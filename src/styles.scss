@@ -1,3 +1,60 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --font-primary: 'Inter', sans-serif;
+    --font-secondary: 'Poppins', sans-serif;
+    --text-color: #1a1a1a;
+    --bg-color: #f9fafb;
+    --primary-color: #6366f1;
+    --secondary-color: #06b6d4;
+  }
+
+body {
+    max-width: 1440px;
+    margin:auto;
+    font-family: var(--font-primary);
+    font-size: 16px;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+h1 {
+    font-family: var(--font-secondary);
+    font-size: 2rem;
+    font-weight: 700;
+    @apply text-gray-800;
+  }
+  
+  h2 {
+    font-family: var(--font-secondary);
+    font-size: 1.75rem;
+    font-weight: 600;
+    @apply text-gray-700;
+  }
+  
+  h3 {
+    font-family: var(--font-secondary);
+    font-size: 1.5rem;
+    font-weight: 500;
+    @apply text-gray-600;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    @apply text-gray-500;
+  }
+
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  
+    &:hover {
+      color: var(--secondary-color);
+    }
+  }
+  
